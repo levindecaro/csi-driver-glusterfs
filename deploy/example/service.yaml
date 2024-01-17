@@ -1,0 +1,28 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: gluster-0
+  namespace: kube-system
+spec:
+  type: ExternalName
+  externalName: gluster-0.okd.local
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: gluster-1
+  namespace: kube-system
+spec:
+  type: ExternalName
+  externalName: gluster-1.okd.local
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: gluster-2
+  namespace: kube-system
+spec:
+  type: ExternalName
+  externalName: gluster-2.okd.local

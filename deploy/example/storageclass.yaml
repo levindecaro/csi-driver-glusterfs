@@ -1,0 +1,14 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: gluster-csi
+provisioner: glusterfs.csi.k8s.io
+parameters:
+  server: gluster-0.okd.local
+  share: /data
+  #uid: 1000  #optional uid for dynamic provisioning
+  #gid: 1000  #optional gid for dynamic provisioning
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+mountOptions:
+  - rw
