@@ -16,10 +16,8 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -ldflags "-X github.com/levindeccaro/cs
 
 FROM centos:stream8
 
-# Copy glusterfsplugin from build _output directory
-#COPY bin/glusterfsplugin /glusterfsplugin
 
-COPY --from=builder bin/glusterfsplugin /glusterfsplugin
+COPY --from=builder /go/src/app/bin/glusterfsplugin /glusterfsplugin
 
 RUN dnf update -y && \
     dnf install glusterfs glusterfs-fuse -y 
