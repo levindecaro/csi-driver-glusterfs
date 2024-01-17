@@ -22,7 +22,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/levindecaro/csi-driver-glusterfs"
+        "github.com/levindecaro/csi-driver-glusterfs/pkg/glusterfs"
 
 	"k8s.io/klog/v2"
 )
