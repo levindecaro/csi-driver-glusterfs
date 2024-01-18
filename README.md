@@ -108,3 +108,8 @@ gluster volume quota <vol> enable
 gluster volume quota <vol> limit-usage /<dir> 10GB
 ```
 
+
+## Known Limitation
+- CSI Snapshot/SnapshotClass/SnapshotContent not supported
+- Resizer modify PV/PVC attributes only, you need to adjust quota from gluster volume/subdir seperately. 
+
