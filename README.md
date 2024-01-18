@@ -1,3 +1,9 @@
+# Gluster CSI Driver for Kubernetes
+
+## Overview
+
+This repository hosts the GlusterFS CSI driver, identified by the CSI plugin name "gluster.csi.k8s.io." The development of this driver was inspired by the csi-driver-nfs project available at https://github.com/kubernetes-csi/csi-driver-nfs. Its purpose is to restore fundamental GlusterFS client support on OpenShift/OKD versions 4.12 and above. The Gluster CSI driver facilitates both dynamic and static provisioning, allowing users to either create on demand PVC with dynamic provisioning or use pre-existing volumes/subdirectories through static provisioning. When utilizing a storage class, PVs are presented as subdirectories within the Gluster volume.
+
 
 ## Build
 
