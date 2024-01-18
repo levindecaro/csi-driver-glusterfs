@@ -10,6 +10,7 @@ parameters:
   #gid: '1000'  #optional gid for dynamic provisioning
 reclaimPolicy: Delete
 volumeBindingMode: Immediate
+allowVolumeExpansion: true
 mountOptions:
   - rw
   - backup-volfile-servers=gluster-1.okd.local:gluster-2.okd.local
