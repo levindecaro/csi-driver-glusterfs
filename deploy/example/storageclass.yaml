@@ -12,3 +12,4 @@ reclaimPolicy: Delete
 volumeBindingMode: Immediate
 mountOptions:
   - rw
+  - backup-volfile-servers=gluster-1.okd.local:gluster-2.okd.local

@@ -26,3 +26,4 @@ metadata:
 spec:
   type: ExternalName
   externalName: gluster-2.okd.local
+

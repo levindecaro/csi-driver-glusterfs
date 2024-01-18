@@ -11,6 +11,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   mountOptions:
     - rw
+    - backup-volfile-servers=gluster-1.okd.local:gluster-2.okd.local
   csi:
     driver: glusterfs.csi.k8s.io
     readOnly: false
