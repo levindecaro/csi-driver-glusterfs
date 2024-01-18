@@ -1,5 +1,11 @@
 
+## Build
 
+```
+git clone https://github.com/levindecaro/csi-driver-glusterfs.git
+cd csi-driver-glusterfs
+podman build -t  csi-driver-glusterfs:latest  .
+```
 
 ## Installation
 
